@@ -88,7 +88,8 @@ justify-content: center;
     padding:28px;
     border-radius:10px;
     filter:drop-shadow(1px 1px 2px #0000001a);
-    margin:32px 0;
+    margin: 32px 0;
+    max-width:446px;
 }
 
 form{
@@ -100,7 +101,7 @@ form{
 label, input {
     display: block;
     margin:5px 0;
-    width:220px;
+    width:200px;
   }
 
 label{
@@ -109,7 +110,6 @@ label{
     opacity:0.55;
     font-weight:bold;
     letter-spacing:1px;
-    margin-right:30px;
 }
 
 input{
@@ -143,11 +143,15 @@ input:invalid{
     margin-bottom:-12px;
   }
 
+  label:nth-child(odd) {
+    margin-right:24px;
+}
+
 button{
     margin-bottom:28px;
     background-color:#5C7C2F;
     width:200px;
-    border-radius:5px;
+    border-radius:10px;
     border:none;
     color:#F8FAF3;
     font-weight:bold;
