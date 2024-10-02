@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @font-face {
+        font-family: Norse;
+        src: url(Norse-Bold.otf);
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="logo-panel">
+            <div class="logo-container">
+                <img class="brandmark" src="odin-lined.png" alt="Odin Brandmark">
+                <p class="wordmark">ODIN</p>
+            </div>
+            <div class="photo-credit">Photo by <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSAon"> Halie West</a> on&nbsp;<a href="https://unsplash.com">Unsplash</a></div>
+        </div>
+        <div class="form-panel">
+            <div class="explainer-text">This is not a real online service! This made up service will help you realize your deepest dreams. Sign up <i>now</i> to get started. <br><br>You <i>know</i> you want to.</div>
+            <div class="form-container">
+                <p class="form-header">Let's do this!</p>
+                <form id="signUp">
+                    <label for="first_name">First Name <input id="first_name"></label>
+                    <label for="last_name">Last Name <input id="last_name"></label>
+                    <label for="mail">Email<input type="email" id="mail"></label>
+                    <label for="phone">Phone Number<input id="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></label>
+                    <label for="pw">Password<input type="password" id="pw" minlength="8"><span class="helper-text">Password should be at least 8 characters.</span></label>
+                    <label for="confirm_pw">Confirm Password<input type="password" id="confirm_pw" minlength="8"><span class="helper-text">Password should be at least 8 characters.</span></label>
+                </form>
+            </div>
+            <button form="signUp">Create Account</button>
+            <div class="login-link">Already have an account? <a href="https://www.bensterne.com/">Log In</a></div>
+        </div>
+    </div>
+</body>
+</html>
